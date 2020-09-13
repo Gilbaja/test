@@ -4,12 +4,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Destino</title>
+		<title>Inicio</title>
 	</head>
 	<body>
-		El parámetro que me has pasado es:<br>
 		<%
-			out.println(request.getParameter("edad"));
+			int edad = 36;
+			out.println("El doble de tu edad es: "+edad*2);
 		%>
+		<a href="destino.jsp?edad=<%=edad%>">Vamos a la segunda página</a>
 	</body>
 </html>
